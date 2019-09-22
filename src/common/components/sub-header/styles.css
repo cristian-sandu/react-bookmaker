@@ -1,0 +1,17 @@
+.subheader_logo-container {
+    background-color: #0000009c;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.last_updated {
+    background-color: #0000008c;
+    border-radius: 7px;
+    text-align: start;
+    color: white;
+    padding-left: 2%;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}

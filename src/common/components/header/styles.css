@@ -1,0 +1,21 @@
+header {
+    font-size: 18px;
+    background-color: #232426 !important;
+}
+
+header .bookmaker__header_navigation {
+    float: right;
+}
+
+header .bookmaker__header_navigation a:hover {
+    color: red !important;
+}
+
+header .bookmaker__logo {
+    float: left;
+}
+
+.mobileHeader a {
+    color: unset !important;
+    text-decoration: none !important;
+}

@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Bookmaker",
+  "version": "Offline",
+  "name": "Super 10 Buchmacher",
   "icons": [
     {
       "src": "favicon.ico",

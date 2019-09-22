@@ -1,0 +1,71 @@
+.bookmaker__contact-us {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.bookmaker__contact-us-text {
+    font-size: 24px !important;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.inside-layout-about-us {
+    border-radius: 10px;
+    background: #ada996; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaeaea, #f2f2f2, #f2f2f2, #eaeaea); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaeaea, #f2f2f2, #f2f2f2, #eaeaea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+input:valid {
+    border-bottom: 2px solid green;
+}
+
+input:invalid {
+    border-bottom: 2px solid red;
+}
+
+textarea:valid {
+    border-bottom: 2px solid green;
+}
+
+textarea:invalid {
+    border-bottom: 2px solid red;
+}
+
+.bookmaker__datepicker {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.bookmaker__datepicker input{
+    padding-left: 10px;
+}
+
+.bookmaker__datepicker button {
+    margin-top: -20px;
+}
+
+.bookmaker__datepicker label{
+    padding-left: 10px;
+}
+
+label + .MuiInput-formControl {
+    margin-top: 22px;
+}
+
+.admin__support {
+    background-color: #0000007d;
+    color: white;
+    text-align: right;
+    padding-right: 25px;
+}

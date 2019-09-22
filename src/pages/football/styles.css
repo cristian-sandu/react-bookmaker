@@ -1,0 +1,22 @@
+.bookmaker__football {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background-image: url('./images/football.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.bookmaker__football-text {
+    font-size: 24px !important;
+    color: white;
+    background-color: #061800ab;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}

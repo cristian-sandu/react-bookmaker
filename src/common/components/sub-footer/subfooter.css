@@ -1,0 +1,8 @@
+.withBullet {
+    padding-left: 20px;
+    line-height: 20px;
+}
+
+.withBullet:before {
+    content:"• ";
+}
