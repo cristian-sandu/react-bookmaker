@@ -17,7 +17,8 @@ const rowData = [
     reviews: 5,
     ourItem: 9.7,
     betNow: 'BESUCHEN',
-    link: FEED_LINKS[SPORT_BAR_BERLIN],
+    link: FEED_LINKS[SPORT_BAR_BERLIN].LINK,
+    maskedLink: FEED_LINKS[SPORT_BAR_BERLIN].MASKED_LINK,
   },
   {
     name: SPORTS_BAR_TOR_133,
@@ -26,7 +27,8 @@ const rowData = [
     reviews: 5,
     ourItem: 9.6,
     betNow: 'BESUCHEN',
-    link: FEED_LINKS[SPORTS_BAR_TOR_133],
+    link: FEED_LINKS[SPORTS_BAR_TOR_133].LINK,
+    maskedLink: FEED_LINKS[SPORTS_BAR_TOR_133].MASKED_LINK,
   },
   {
     name: FC_MAGNET_BAR,
@@ -35,7 +37,8 @@ const rowData = [
     reviews: 4,
     ourItem: 9.4,
     betNow: 'BESUCHEN',
-    link: FEED_LINKS[FC_MAGNET_BAR],
+    link: FEED_LINKS[FC_MAGNET_BAR].LINK,
+    maskedLink: FEED_LINKS[FC_MAGNET_BAR].MASKED_LINK,
   },
   {
     name: COUNTRY_CHEERS,
@@ -44,7 +47,8 @@ const rowData = [
     reviews: 5,
     ourItem: 9.0,
     betNow: 'BESUCHEN',
-    link: FEED_LINKS[COUNTRY_CHEERS],
+    link: FEED_LINKS[COUNTRY_CHEERS].LINK,
+    maskedLink: FEED_LINKS[COUNTRY_CHEERS].MASKED_LINK,
   },
   {
     name: TREFFPUNKT,
@@ -53,7 +57,8 @@ const rowData = [
     reviews: 5,
     ourItem: 9.0,
     betNow: 'BESUCHEN',
-    link: FEED_LINKS[TREFFPUNKT],
+    link: FEED_LINKS[TREFFPUNKT].LINK,
+    maskedLink: FEED_LINKS[TREFFPUNKT].MASKED_LINK,
   },
   {
     name: BUTCHERS,
@@ -62,7 +67,8 @@ const rowData = [
     reviews: 4,
     ourItem: 8.9,
     betNow: 'BESUCHEN',
-    link: FEED_LINKS[BUTCHERS],
+    link: FEED_LINKS[BUTCHERS].LINK,
+    maskedLink: FEED_LINKS[BUTCHERS].MASKED_LINK,
   },
 ]
 

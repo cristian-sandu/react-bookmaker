@@ -8,8 +8,8 @@ import { Paper } from '@material-ui/core'
 
 import FeedRow from './components/FeedRow'
 import FeedHeader from './components/FeedHeader'
+import rowData from './data/row-data'
 
-import rowData from './data/mock-data'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import './feed.css'
 

@@ -4,8 +4,6 @@ import { number, string } from 'prop-types'
 import StarRatingComponent from 'react-star-rating-component'
 import { Td as TableCell, Tr as TableRow } from 'react-super-responsive-table'
 
-import { APP_URL, EMPTY_STRING } from 'common/constants'
-
 import { getImageByName } from '../utils/utils'
 
 const FeedRow = ({
@@ -16,20 +14,20 @@ const FeedRow = ({
   ourItem,
   betNow,
   link,
+  maskedLink,
 }) => {
-  const handleRedirect = originalLink => evt => {
+  const handleRedirect = evt => {
     evt.preventDefault()
-    const redirectLink = originalLink.replace(`${APP_URL}/go/`, EMPTY_STRING)
     // eslint-disable-next-line no-undef
     if (!window && !window.open) return
     // eslint-disable-next-line no-undef
-    window.open(redirectLink)
+    window.open(link)
   }
 
   return (
     <TableRow key={name}>
       <TableCell style={{ display: 'flex', marginTop: 5 }}>
-        <a onClick={handleRedirect(link)} target="blank" href={link}>
+        <a onClick={handleRedirect} target="blank" href={maskedLink}>
           <img
             width={170}
             style={{ padding: 5 }}
@@ -61,10 +59,10 @@ const FeedRow = ({
         <Button
           className="besuchen_btn"
           target="blank"
-          href={link}
+          href={maskedLink}
           variant="contained"
           color="secondary"
-          onClick={handleRedirect(link)}
+          onClick={handleRedirect}
         >
           {betNow}
         </Button>
@@ -81,6 +79,7 @@ FeedRow.propTypes = {
   ourItem: number.isRequired,
   betNow: string.isRequired,
   link: string.isRequired,
+  maskedLink: string.isRequired,
 }
 
 export default FeedRow
