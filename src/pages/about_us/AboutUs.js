@@ -1,14 +1,16 @@
 import React, { useContext, useMemo } from 'react'
 import { Container, Link } from '@material-ui/core'
 
-import { Facebook, LinkedIn, Twitter } from 'assets/icons'
-import { PageTitle, SubHeader } from 'common/components'
-import { FOOTER_SOCIAL_LINKS } from 'common/components/footer/constants'
-import SiteVersionContext from 'common/context/siteVersionContext'
+import { Facebook, LinkedIn, Twitter } from 'assets/social-icons'
+
 import { SITE_VERSION } from 'common/constants'
+import { FOOTER_SOCIAL_LINKS } from 'common/components/footer/constants'
+import { PageTitle, SubHeader } from 'common/components'
+import SiteVersionContext from 'common/context/siteVersionContext'
 
 import './styles.css'
 
+const SOCIAL_ICONS_SIZE = 80
 const { ONLINE } = SITE_VERSION
 
 const AboutUs = () => {
@@ -53,21 +55,36 @@ const AboutUs = () => {
               component="a"
               href={FOOTER_SOCIAL_LINKS.FACEBOOK}
             >
-              <Facebook size={50} />
+              <img
+                src={Facebook}
+                alt="Fb"
+                width={SOCIAL_ICONS_SIZE}
+                height={SOCIAL_ICONS_SIZE}
+              />
             </Link>
             <Link
               target="_blank"
               component="a"
               href={FOOTER_SOCIAL_LINKS.TWITTER}
             >
-              <Twitter size={50} />
+              <img
+                src={Twitter}
+                alt="Twitter"
+                width={SOCIAL_ICONS_SIZE}
+                height={SOCIAL_ICONS_SIZE}
+              />
             </Link>
             <Link
               target="_blank"
               component="a"
               href={FOOTER_SOCIAL_LINKS.LINKED_IN}
             >
-              <LinkedIn size={50} />
+              <img
+                src={LinkedIn}
+                alt="LinkedIn"
+                width={SOCIAL_ICONS_SIZE}
+                height={SOCIAL_ICONS_SIZE}
+              />
             </Link>
           </span>
         </div>
