@@ -1,8 +1,9 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import axios from 'axios'
+import classNames from 'classnames'
 
-import { APP_ROUTES } from 'common/constants'
+import { APP_ROUTES, SITE_VERSION } from 'common/constants'
 import { Footer, Header, Loading, NotFound } from 'common/components'
 import SiteVersionContext from 'common/context/siteVersionContext'
 
@@ -18,6 +19,7 @@ const { HOME, ABOUT_US, CONTACTS, PRIVACY, HORSE_RACING, FOOTBALL } = APP_ROUTES
 
 const App = () => {
   const [version, setVersion] = useState()
+  const isOffline = version === SITE_VERSION.OFFLINE
 
   useEffect(() => {
     axios.get('mock/siteVersion.json').then(({ data: { siteVersion } }) => {
@@ -30,7 +32,11 @@ const App = () => {
       <Suspense fallback={<Loading />}>
         <Router>
           <Header />
-          <div className="bookmaker__body">
+          <div
+            className={classNames('bookmaker__body', {
+              'bookmaker__body-offline': isOffline,
+            })}
+          >
             <Switch>
               <Route exact path={HOME} component={Home} />
               <Route path={ABOUT_US} component={AboutUs} />

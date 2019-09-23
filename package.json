@@ -20,7 +20,8 @@
     "react-scripts": "3.0.1",
     "react-star-rating-component": "^1.4.1",
     "react-super-responsive-table": "^5.0.0",
-    "react-use-toggle": "^0.1.0"
+    "react-use-toggle": "^0.1.0",
+    "classnames": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

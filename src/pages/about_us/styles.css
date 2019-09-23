@@ -32,7 +32,7 @@
     padding: 20px;
     display: grid;
     vertical-align: middle;
-    margin-top: 5%;
+    margin-top: 10px;
 }
 
 #loading:hover {
