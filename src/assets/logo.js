@@ -82,6 +82,7 @@ const Logo = () => (
           transform="matrix(1.85,0,0,1.85,83.60334148832462,34.65665224154732)"
           scale-value="1.85"
           data='{"leading":"1.3"}'
+          fill="white"
           x="-13"
         >
           <tspan
@@ -90,8 +91,7 @@ const Logo = () => (
             fill="#ffffffff"
             data='{"leading":"1.3"}'
           >
-
-            Super
+            {'Super '}
           </tspan>
           <tspan data='{"leading":"1.3"}' />
           <tspan
@@ -99,9 +99,7 @@ const Logo = () => (
             fill="#ffffffff"
             data='{"leading":"1.3"}'
           >
-            {' '}
-
-            10
+            {'10 '}
           </tspan>
           <tspan data='{"leading":"1.3"}' />
           <tspan
@@ -109,9 +107,7 @@ const Logo = () => (
             fill="#ffffffff"
             data='{"leading":"1.3"}'
           >
-            {' '}
-
-            Buchmacher
+            {'Buchmacher'}
           </tspan>
         </text>
       </g>
