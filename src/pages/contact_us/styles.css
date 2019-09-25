@@ -62,3 +62,13 @@ textarea:invalid {
 label + .MuiInput-formControl {
     margin-top: 22px;
 }
+
+.contact_us_layout {
+    display: inline-grid !important;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.contact_us_layout__ie {
+    display: -ms-inline-flexbox !important;
+}

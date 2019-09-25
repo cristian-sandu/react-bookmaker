@@ -2,6 +2,7 @@ import React, { useContext, useMemo, useRef, useState } from 'react'
 import { instanceOf } from 'prop-types'
 import { withRouter } from 'react-router'
 import DateFnsUtils from '@date-io/date-fns'
+import classNames from 'classnames'
 
 import {
   Box,
@@ -22,6 +23,10 @@ import SiteVersionContext from 'common/context/siteVersionContext'
 
 import './styles.css'
 import 'date-fns'
+
+// eslint-disable-next-line no-undef
+const ua = window.navigator.userAgent
+const isIE = /MSIE|Trident/.test(ua)
 
 const { ONLINE } = SITE_VERSION
 const SUCCESS_MESSAGE = 'Formular erfolgreich abgeschickt!'
@@ -114,6 +119,7 @@ function ContactUs({ history }) {
                 {isOnline && (
                   <div>
                     <span style={{ fontFamily: 'serif' }}>
+
                       Sie haben unsere Website besucht und können nicht finden
                       wonach Sie suchen oder haben Anregungen? Treten Sie mit
                       uns in Kontakt! Sind Sie ein Hotelbesitzer, in der Nähe
@@ -124,7 +130,11 @@ function ContactUs({ history }) {
                     </span>
                   </div>
                 )}
-                <Box style={{ display: 'inline-grid' }}>
+                <Box
+                  className={classNames('contact_us_layout', {
+                    contact_us_layout__ie: isIE,
+                  })}
+                >
                   <h2> Geben Sie ihre Nachricht ein</h2>
                   <TextField
                     required
@@ -218,6 +228,7 @@ function ContactUs({ history }) {
                     type="submit"
                     onClick={handleSubmit}
                   >
+
                     Senden
                   </Button>
                 </Box>
