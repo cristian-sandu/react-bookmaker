@@ -103,7 +103,7 @@ function ContactUs({ history }) {
               <SubHeader />
               <PageTitle
                 style={{
-                  backgroundColor: '#ffffffed',
+                  backgroundColor: 'rgba(255, 255, 255, 0.9294117647058824)',
                   color: 'black',
                   borderRadius: '5px',
                   padding: '5px',
@@ -114,7 +114,6 @@ function ContactUs({ history }) {
                 {isOnline && (
                   <div>
                     <span style={{ fontFamily: 'serif' }}>
-
                       Sie haben unsere Website besucht und können nicht finden
                       wonach Sie suchen oder haben Anregungen? Treten Sie mit
                       uns in Kontakt! Sind Sie ein Hotelbesitzer, in der Nähe
@@ -219,7 +218,6 @@ function ContactUs({ history }) {
                     type="submit"
                     onClick={handleSubmit}
                   >
-
                     Senden
                   </Button>
                 </Box>
