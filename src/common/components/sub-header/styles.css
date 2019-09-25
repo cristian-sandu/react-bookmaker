@@ -1,5 +1,5 @@
 .subheader_logo-container {
-    background-color: #0000009c;
+    background-color: rgba(0, 0, 0, 0.611764705882353);
     text-align: center;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -7,7 +7,7 @@
 }
 
 .last_updated {
-    background-color: #0000008c;
+    background-color: rgba(0, 0, 0, 0.5490196078431373);
     border-radius: 7px;
     text-align: start;
     color: white;

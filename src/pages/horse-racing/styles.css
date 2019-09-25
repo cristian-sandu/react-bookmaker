@@ -15,7 +15,7 @@
 .bookmaker__horse-racing-text {
     font-size: 24px !important;
     color: white;
-    background-color: #000018ab;
+    background-color: rgba(0, 0, 24, 0.6705882352941176);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 10px;

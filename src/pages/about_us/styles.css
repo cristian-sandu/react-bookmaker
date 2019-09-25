@@ -17,7 +17,7 @@
     margin-bottom: 10%;
     font-size: 24px !important;
     color: white;
-    background-color: #1a2931ad;
+    background-color: rgba(26, 41, 49, 0.6784313725490196);
     border-radius: 10px;
     padding: 20px;
     height: 30%;
@@ -27,7 +27,7 @@
 .bookmaker__about_us-text__online {
     font-size: 24px !important;
     color: white;
-    background-color: #1a2931db;
+    background-color: rgba(26, 41, 49, 0.8588235294117647);
     border-radius: 10px;
     padding: 20px;
     display: grid;

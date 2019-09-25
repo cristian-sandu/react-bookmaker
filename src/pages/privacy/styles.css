@@ -19,7 +19,7 @@
 .bookmaker__privacy-text {
     font-size: 18px !important;
     color: white;
-    background-color: #000318a1;
+    background-color: rgba(0, 3, 24, 0.6313725490196078);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 10px;
