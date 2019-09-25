@@ -173,3 +173,31 @@ code {
         min-height: 96vh
     }
 }
+
+
+/*Flickering fix*/
+/*Edge*/
+@supports ( -ms-accelerator:true ) {
+    html{
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/*IE 10/11*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    html{
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+}

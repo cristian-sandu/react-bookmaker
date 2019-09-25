@@ -23,7 +23,11 @@ const Footer = () => {
           </div>
           <div
             className="column"
-            style={{ paddingTop: '1%', justifyContent: 'center' }}
+            style={{
+              paddingTop: '1%',
+              justifyContent: 'center',
+              display: 'inline',
+            }}
           >
             <div className="column">
               <FooterSocials isOnline={isOnline} />
