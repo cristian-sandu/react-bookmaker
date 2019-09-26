@@ -22,14 +22,6 @@ code {
     monospace;
 }
 
-.bookmaker__background {
-    background-image: url('../assets/jpg/background__offline.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
 .bookmaker__background-online {
     background-image: url('../assets/jpg/background__online.jpg');
     background-repeat: no-repeat;

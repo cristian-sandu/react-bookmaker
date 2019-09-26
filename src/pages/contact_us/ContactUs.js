@@ -93,11 +93,7 @@ function ContactUs({ history }) {
         transitionDuration={1000}
       />
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
-        <div
-          className={`content bookmaker__contact-us ${
-            isOnline ? 'bookmaker__background-online' : 'bookmaker__background'
-          }`}
-        >
+        <div className="content bookmaker__contact-us bookmaker__background-online">
           <form
             autoComplete="off"
             ref={formRef}

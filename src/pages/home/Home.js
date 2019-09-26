@@ -17,9 +17,7 @@ const Home = () => {
 
   return (
     <div
-      className={`content bookmaker__contact-us ${
-        isOnline ? 'bookmaker__background-online' : 'bookmaker__background'
-      }`}
+      className="content bookmaker__contact-us bookmaker__background-online"
       style={{ minHeight: '96vh' }}
     >
       <Container className="content">
