@@ -73,12 +73,10 @@ function SubHeader() {
           <span>{isOnline ? SUBJECT_ONLINE : SUBJECT_OFFLINE}</span>
         </Box>
       </div>
-      {isOnline && (
-        <div className="last_updated">
-          <Autorenew style={{ color: 'red', marginBottom: -4 }} />
-          <span>{`Last Updated: ${date}`}</span>
-        </div>
-      )}
+      <div className="last_updated">
+        <Autorenew style={{ color: 'red', marginBottom: -4 }} />
+        <span>{`Last Updated: ${date}`}</span>
+      </div>
     </>
   )
 }

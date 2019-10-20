@@ -43,6 +43,7 @@ const FeedRow = ({
       </TableCell>
       <TableCell>
         <span
+          className="opening_hours"
           style={
             isOnline && !isMobile ? { width: 120, textAlign: 'center' } : {}
           }

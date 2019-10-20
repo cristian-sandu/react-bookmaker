@@ -27,7 +27,7 @@ function Feed({ history, isOnline }) {
 
   return (
     <Paper className={root}>
-      <Table style={isOnline ? { borderSpacing: '10px' } : {}}>
+      <Table className="table__spacing">
         {!isOnline && (
           <Thead>
             <FeedHeader />
