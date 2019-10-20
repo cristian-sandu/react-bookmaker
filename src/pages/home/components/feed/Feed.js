@@ -1,14 +1,15 @@
 import React from 'react'
 import { Table, Tbody, Thead } from 'react-super-responsive-table'
 import { withRouter } from 'react-router'
-import { instanceOf } from 'prop-types'
+import { instanceOf, bool } from 'prop-types'
+import { isMobileOnly } from 'react-device-detect'
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Paper } from '@material-ui/core'
 
 import FeedRow from './components/FeedRow'
 import FeedHeader from './components/FeedHeader'
-import rowData from './data/row-data'
+import { onlineData, offlineData } from './data/row-data'
 
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import './feed.css'
@@ -20,17 +21,28 @@ const useStyles = makeStyles(() => ({
   },
 }))
 
-function Feed({ history }) {
+function Feed({ history, isOnline }) {
   const { root } = useStyles()
+  const feedData = isOnline ? onlineData : offlineData
+
   return (
     <Paper className={root}>
-      <Table>
-        <Thead>
-          <FeedHeader />
-        </Thead>
+      <Table style={isOnline ? { borderSpacing: '10px' } : {}}>
+        {!isOnline && (
+          <Thead>
+            <FeedHeader />
+          </Thead>
+        )}
         <Tbody>
-          {rowData.map(({ name, ...rest }) => (
-            <FeedRow key={name} history={history} name={name} {...rest} />
+          {feedData.map(({ name, ...rest }) => (
+            <FeedRow
+              isOnline={isOnline}
+              isMobile={isMobileOnly}
+              key={name}
+              history={history}
+              name={name}
+              {...rest}
+            />
           ))}
         </Tbody>
       </Table>
@@ -40,6 +52,7 @@ function Feed({ history }) {
 
 Feed.propTypes = {
   history: instanceOf(Object).isRequired,
+  isOnline: bool.isRequired,
 }
 
 export default withRouter(Feed)

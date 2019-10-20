@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '@material-ui/core'
-import { number, string } from 'prop-types'
+import { number, string, bool } from 'prop-types'
 import StarRatingComponent from 'react-star-rating-component'
 import { Td as TableCell, Tr as TableRow } from 'react-super-responsive-table'
 
@@ -15,6 +15,8 @@ const FeedRow = ({
   betNow,
   link,
   maskedLink,
+  isOnline,
+  isMobile,
 }) => {
   const handleRedirect = evt => {
     evt.preventDefault()
@@ -36,10 +38,23 @@ const FeedRow = ({
           />
         </a>
       </TableCell>
-      <TableCell>{location}</TableCell>
-      <TableCell>{openingHours}</TableCell>
       <TableCell>
-        <span className="stars_rating" style={{ fontSize: 20 }}>
+        <span style={{ textAlign: 'center' }}>{location}</span>
+      </TableCell>
+      <TableCell>
+        <span
+          style={
+            isOnline && !isMobile ? { width: 120, textAlign: 'center' } : {}
+          }
+        >
+          {openingHours}
+        </span>
+      </TableCell>
+      <TableCell>
+        <span
+          className="stars_rating"
+          style={isOnline ? { fontSize: 20, width: 120 } : { fontSize: 20 }}
+        >
           <StarRatingComponent
             name={String(reviews)}
             starCount={5}
@@ -57,7 +72,7 @@ const FeedRow = ({
       </TableCell>
       <TableCell>
         <Button
-          className="besuchen_btn"
+          className={isOnline ? 'besuchen_btn__online' : 'besuchen_btn'}
           target="blank"
           href={maskedLink}
           variant="contained"
@@ -80,6 +95,8 @@ FeedRow.propTypes = {
   betNow: string.isRequired,
   link: string.isRequired,
   maskedLink: string.isRequired,
+  isOnline: bool.isRequired,
+  isMobile: bool.isRequired,
 }
 
 export default FeedRow

@@ -1,12 +1,18 @@
 import { APP_URL } from 'common/constants'
 
 export const LOGO_NAMES = {
+  // Offline
   BUTCHERS: 'BUTCHERS',
   COUNTRY_CHEERS: 'COUNTRY_CHEERS',
   FC_MAGNET_BAR: 'FC_MAGNET_BAR',
   SPORT_BAR_BERLIN: 'SPORT_BAR_BERLIN',
   SPORTS_BAR_TOR_133: 'SPORTS_BAR_TOR_133',
   TREFFPUNKT: 'TREFFPUNKT',
+  // Online
+  SPIN_SPORTS: 'Spin Sports',
+  _10BET: '10BET',
+  LEO_VEGAS: 'Leo Vegas',
+  _888SPORT: '888Sport',
 }
 
 export const FEED_LINKS = {
@@ -33,6 +39,24 @@ export const FEED_LINKS = {
   [LOGO_NAMES.TREFFPUNKT]: {
     LINK: 'http://treffpunkt-sportsbar.de',
     MASKED_LINK: `${APP_URL}/go/treffpunkt-sportsbar/222981`,
+  },
+  [LOGO_NAMES.SPIN_SPORTS]: {
+    LINK: 'https://www.spinsports.com/de/?s=bfp18821&a=bfpadid112425',
+    MASKED_LINK: `${APP_URL}/go/spinsports/999032`,
+  },
+  // eslint-disable-next-line no-underscore-dangle
+  [LOGO_NAMES._10BET]: {
+    LINK: 'https://casino.10bet.com/welcome-bonus-casino/de/index.html',
+    MASKED_LINK: `${APP_URL}/go/casino-10-bet/521099`,
+  },
+  [LOGO_NAMES.LEO_VEGAS]: {
+    LINK: 'https://ads.leovegas.com/redirect.aspx?pid=3651141&bid=13309',
+    MASKED_LINK: `${APP_URL}/go/leo-vegas/999444`,
+  },
+  // eslint-disable-next-line no-underscore-dangle
+  [LOGO_NAMES._888SPORT]: {
+    LINK: 'https://www.888sport.com/de/#/home',
+    MASKED_LINK: `${APP_URL}/go/888-sport/888092`,
   },
 }
 

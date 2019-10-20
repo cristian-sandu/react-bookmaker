@@ -12,6 +12,7 @@ import {
   NotFound,
   ScrollToTop,
 } from 'common/components'
+import getAppVersion from 'utils/version-toggle'
 
 import './styles/index.css'
 
@@ -23,14 +24,16 @@ const Football = lazy(() => import('pages/football/Football'))
 const HorseRacing = lazy(() => import('pages/horse-racing/HorseRacing'))
 
 const { HOME, ABOUT_US, CONTACTS, PRIVACY, HORSE_RACING, FOOTBALL } = APP_ROUTES
+const { OFFLINE } = SITE_VERSION
 
 const App = () => {
   const [version, setVersion] = useState()
-  const isOffline = version === SITE_VERSION.OFFLINE
+  const isOffline = version === OFFLINE
 
   useEffect(() => {
-    axios.get('mock/siteVersion.json').then(({ data: { siteVersion } }) => {
-      setVersion(siteVersion)
+    axios.get('mock/siteVersion.json').then(({ data }) => {
+      const appVersion = getAppVersion(data)
+      setVersion(appVersion)
     })
   })
 

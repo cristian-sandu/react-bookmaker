@@ -4,6 +4,10 @@ import FCMagnetBar from '../images/fc_magnet_bar.png'
 import SportBarBerlin from '../images/sport_bar_berlin.png'
 import SportsBarTor133 from '../images/sports_bar_tor_133.png'
 import Treffpunkt from '../images/treffpunkt.png'
+import SpinSports from '../images/spin_sports.jpg'
+import LeoVegas from '../images/leovegas.png'
+import _888Sport from '../images/888Sports.png'
+import _10Bet from '../images/10bet.jpg'
 
 import { LOGO_NAMES } from '../constants'
 
@@ -14,6 +18,10 @@ const {
   SPORT_BAR_BERLIN,
   SPORTS_BAR_TOR_133,
   TREFFPUNKT,
+  SPIN_SPORTS,
+  LEO_VEGAS,
+  _888SPORT,
+  _10BET,
 } = LOGO_NAMES
 
 export const getImageByName = name => {
@@ -35,6 +43,18 @@ export const getImageByName = name => {
 
     case TREFFPUNKT:
       return Treffpunkt
+
+    case SPIN_SPORTS:
+      return SpinSports
+
+    case LEO_VEGAS:
+      return LeoVegas
+
+    case _888SPORT:
+      return _888Sport
+
+    case _10BET:
+      return _10Bet
 
     default:
       return null

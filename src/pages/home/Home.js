@@ -22,7 +22,7 @@ const Home = () => {
     >
       <Container className="content">
         <SubHeader />
-        <Feed />
+        <Feed isOnline={isOnline} />
         <SubFooter isOnline={isOnline} />
       </Container>
     </div>

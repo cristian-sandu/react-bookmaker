@@ -1,3 +1,4 @@
 {
-  "siteVersion": "Offline"
+  "siteVersion": "Online",
+  "mobileOnlineMode": false
 }
