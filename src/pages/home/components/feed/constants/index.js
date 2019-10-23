@@ -40,14 +40,16 @@ export const FEED_LINKS = {
     LINK: 'http://treffpunkt-sportsbar.de',
     MASKED_LINK: `${APP_URL}/go/treffpunkt-sportsbar/222981`,
   },
+  // Online
   [LOGO_NAMES.SPIN_SPORTS]: {
     LINK: 'https://www.spinsports.com/de/?s=bfp18821&a=bfpadid112425',
     MASKED_LINK: `${APP_URL}/go/spinsports/999032`,
   },
   // eslint-disable-next-line no-underscore-dangle
   [LOGO_NAMES._10BET]: {
-    LINK: 'https://casino.10bet.com/welcome-bonus-casino/de/index.html',
-    MASKED_LINK: `${APP_URL}/go/casino-10-bet/521099`,
+    LINK:
+      'https://sports.10bet.com/welcome-bonus-sports-med/en/index.html?btag=a_53407b_5161c_&siteid=53407',
+    MASKED_LINK: `${APP_URL}/go/sports-10-bet/521099`,
   },
   [LOGO_NAMES.LEO_VEGAS]: {
     LINK: 'https://ads.leovegas.com/redirect.aspx?pid=3651141&bid=13309',

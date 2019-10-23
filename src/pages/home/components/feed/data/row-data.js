@@ -89,8 +89,7 @@ const onlineData = [
   },
   {
     name: _10BET,
-    location:
-      '100% Bonus bis zu 100 € + machen Sie Ihre erste Wette. 25 Freispiele für Book of Dead',
+    location: '100% Bonus bis zu 100€ + machen Sie Ihre erste Wette',
     openingHours: 'Live-Wetten',
     reviews: 4,
     ourItem: 9.7,
@@ -102,8 +101,7 @@ const onlineData = [
   },
   {
     name: LEO_VEGAS,
-    location:
-      '100% Bonus bis zu 100 € + machen Sie Ihre erste Wette. 25 Freispiele für Book of Dead',
+    location: '100€ in GratisWetten Als Neukunde Abraumen',
     openingHours: 'Live-Wetten',
     reviews: 4,
     ourItem: 9.7,
