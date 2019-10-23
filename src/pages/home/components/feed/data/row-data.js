@@ -89,7 +89,7 @@ const onlineData = [
   },
   {
     name: _10BET,
-    location: '100% Bonus bis zu 100€ + machen Sie Ihre erste Wette',
+    location: '100% Bonus bis zu 100€',
     openingHours: 'Live-Wetten',
     reviews: 4,
     ourItem: 9.7,

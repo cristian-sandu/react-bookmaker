@@ -48,7 +48,7 @@ export const FEED_LINKS = {
   // eslint-disable-next-line no-underscore-dangle
   [LOGO_NAMES._10BET]: {
     LINK:
-      'https://sports.10bet.com/welcome-bonus-sports-med/en/index.html?btag=a_53407b_5161c_&siteid=53407',
+      'https://track.10bet.com/C.ashx?btag=a_53407b_5161c_&affid=1680705&siteid=53407&adid=5161&c',
     MASKED_LINK: `${APP_URL}/go/sports-10-bet/521099`,
   },
   [LOGO_NAMES.LEO_VEGAS]: {
@@ -57,7 +57,7 @@ export const FEED_LINKS = {
   },
   // eslint-disable-next-line no-underscore-dangle
   [LOGO_NAMES._888SPORT]: {
-    LINK: 'https://www.888sport.com/de/#/home',
+    LINK: 'https://mmwebhandler.aff-online.com/C/39183?',
     MASKED_LINK: `${APP_URL}/go/888-sport/888092`,
   },
 }
