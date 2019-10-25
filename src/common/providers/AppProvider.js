@@ -12,11 +12,11 @@ function AppProvider() {
 
   return isAppReady ? (
     <Router>
-      <VersionProvider value={version}>
-        <ScrollToTop>
+      <ScrollToTop>
+        <VersionProvider value={version}>
           <App />
-        </ScrollToTop>
-      </VersionProvider>
+        </VersionProvider>
+      </ScrollToTop>
     </Router>
   ) : (
     <Loading />
