@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
-import { SITE_VERSION } from 'common/constants'
 
+import { SITE_VERSION } from 'common/constants'
 import getAppVersion from 'utils/version-toggle'
 
 const { OFFLINE } = SITE_VERSION
@@ -25,7 +25,10 @@ function useAppInfo() {
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
 
-  const isAppReady = useMemo(() => Boolean(version && userData), [userData, version])
+  const isAppReady = useMemo(() => Boolean(version && userData), [
+    userData,
+    version,
+  ])
 
   return {
     isAppReady,

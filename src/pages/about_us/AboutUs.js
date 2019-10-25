@@ -44,7 +44,7 @@ const AboutUs = () => {
                 oder Anleitungen gerne auf unsere Webseite hinzufügen wollen.`}
               </p>
               <p>
-                {`Diese Website ist für alle Wettspieler von Vorteil, egal wo Sie auf der Welt leben oder auf welche Sportsp`}
+                Diese Website ist für alle Wettspieler von Vorteil, egal wo Sie auf der Welt leben oder auf welche Sportsp
               </p>
             </>
           )}

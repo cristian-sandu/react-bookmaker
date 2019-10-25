@@ -91,7 +91,7 @@ const Logo = () => (
             fill="#ffffffff"
             data='{"leading":"1.3"}'
           >
-            {'Super '}
+            Super&nbsp;
           </tspan>
           <tspan data='{"leading":"1.3"}' />
           <tspan
@@ -99,7 +99,7 @@ const Logo = () => (
             fill="#ffffffff"
             data='{"leading":"1.3"}'
           >
-            {'10 '}
+            10&nbsp;
           </tspan>
           <tspan data='{"leading":"1.3"}' />
           <tspan
@@ -107,7 +107,7 @@ const Logo = () => (
             fill="#ffffffff"
             data='{"leading":"1.3"}'
           >
-            {'Buchmacher'}
+            Buchmacher
           </tspan>
         </text>
       </g>
