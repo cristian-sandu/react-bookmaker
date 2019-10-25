@@ -1,6 +1,7 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import { Loading } from 'common/components'
+import { Loading, ScrollToTop } from 'common/components'
 import { VersionProvider } from 'common/context'
 import { useAppInfo } from 'common/hooks'
 
@@ -10,9 +11,13 @@ function AppProvider() {
   const { isAppReady, version } = useAppInfo()
 
   return isAppReady ? (
-    <VersionProvider value={version}>
-      <App />
-    </VersionProvider>
+    <Router>
+      <VersionProvider value={version}>
+        <ScrollToTop>
+          <App />
+        </ScrollToTop>
+      </VersionProvider>
+    </Router>
   ) : (
     <Loading />
   )
