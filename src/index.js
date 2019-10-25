@@ -3,15 +3,12 @@ import 'react-app-polyfill/stable'
 
 import React from 'react'
 import { render } from 'react-dom'
-import App from './App'
+import { AppProvider } from 'common/providers'
 
-import { register as registerServiceWorker } from './utils/serviceWorker'
-
+import { register } from './utils/serviceWorker'
 import './styles/index.css'
 
 // eslint-disable-next-line no-undef
-const rootElement = document.getElementById('root')
+render(<AppProvider />, document.getElementById('root'))
 
-render(<App />, rootElement)
-
-registerServiceWorker()
+register()
