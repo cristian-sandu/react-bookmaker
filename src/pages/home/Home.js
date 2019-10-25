@@ -3,7 +3,7 @@ import React, { useContext, useMemo } from 'react'
 import { Container } from '@material-ui/core'
 
 import { SubFooter, SubHeader } from 'common/components'
-import SiteVersionContext from 'common/context/siteVersionContext'
+import { SiteVersionContext } from 'common/context'
 import { SITE_VERSION } from 'common/constants'
 
 import { Feed } from './components'
