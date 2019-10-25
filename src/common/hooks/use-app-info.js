@@ -25,10 +25,7 @@ function useAppInfo() {
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
 
-  const isAppReady = useMemo(() => Boolean(version && userData), [
-    version,
-    userData,
-  ])
+  const isAppReady = useMemo(() => Boolean(version && userData), [userData, version])
 
   return {
     isAppReady,

@@ -1,8 +1,13 @@
 {
   "extends": ["airbnb", "prettier"],
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
     "semi": "off",
-    "react/jsx-filename-extension": [0]
+    "react/jsx-filename-extension": [0],
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
   },
   "settings": {
     "import/resolver": {
