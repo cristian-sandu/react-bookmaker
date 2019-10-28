@@ -1,4 +1,6 @@
 {
-  "siteVersion": "Offline",
-  "mobileOnlineMode": true
+  "blockBots": true,
+  "blockUsersOutsideGermany": true,
+  "mobileOnlineMode": true,
+  "siteVersion": "Offline"
 }

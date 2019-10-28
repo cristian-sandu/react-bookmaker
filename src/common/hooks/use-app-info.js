@@ -12,15 +12,21 @@ function useAppInfo() {
 
   useEffect(() => {
     axios.get('mock/siteVersion.json').then(({ data }) => {
-      const appVersion = getAppVersion(data)
+      const appVersion = getAppVersion(data, userData)
       setVersion(appVersion)
     })
-  }, [])
+  }, [userData])
 
   useEffect(() => {
-    axios.get('https://ipapi.co/json').then(({ data }) => {
-      setUserData(data)
-    })
+    axios
+      .get('https://api.ipdata.co?api-key=test', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then(({ data }) => {
+        setUserData(data)
+      })
   }, [])
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
