@@ -28,7 +28,7 @@ const FeedRow = ({
 
   return (
     <TableRow key={name}>
-      <TableCell style={{ display: 'flex', marginTop: 5 }}>
+      <TableCell>
         <a onClick={handleRedirect} target="blank" href={maskedLink}>
           <img
             width={170}
