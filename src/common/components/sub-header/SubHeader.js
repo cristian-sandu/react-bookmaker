@@ -50,7 +50,7 @@ function SubHeader() {
           </span>
           <span
             style={{
-              paddingLeft: 20,
+              paddingLeft: isMobile ? 0 : 20,
               paddingTop: 5,
               fontSize: 29,
               fontWeight: 'bold',
