@@ -4,6 +4,8 @@ export const SITE_VERSION = {
 }
 
 export const APP_URL = 'https://super10buchmacher.com'
+export const SITE_VERSION_URL = 'mock/siteVersion.json'
+export const EXTREME_IP_LOOKUP_URL = 'https://extreme-ip-lookup.com/json/'
 
 export const APP_ROUTES = {
   HOME: '/',

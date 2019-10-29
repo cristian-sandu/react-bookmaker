@@ -1,15 +1,14 @@
 import { isMobileOnly } from 'react-device-detect'
-import { SITE_VERSION } from 'common/constants'
 import { Crawler } from 'es6-crawler-detect/src'
+import { SITE_VERSION } from 'common/constants'
 
 const { ONLINE, OFFLINE } = SITE_VERSION
-
-const CRW_REGEX = /googlebot|Googlebot|crawler|Googlebot-Mobile|Google favicon|Mediapartners-Google|Googlebot-Image/i
 const GERMANY_CODE = 'DE'
+const CRW_REGEX = /googlebot|Googlebot|crawler|Googlebot-Mobile|Google favicon|Mediapartners-Google|Googlebot-Image/i
 
-const isGermanyCode = code => {
-  if (code === undefined) return true
-  return code === GERMANY_CODE
+const isNotGermanyCode = countryCode => {
+  if (!countryCode) return false
+  return countryCode !== GERMANY_CODE
 }
 
 const isUserBot = () => {
@@ -27,7 +26,7 @@ const getAppVersion = (
     case blocheazaBoti && isUserBot():
       return OFFLINE
 
-    case blocheazaAfaraGermaniei && !isGermanyCode(countryCode):
+    case blocheazaAfaraGermaniei && isNotGermanyCode(countryCode):
       return OFFLINE
 
     case Boolean(mobilModOnline):

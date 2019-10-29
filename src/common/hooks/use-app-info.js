@@ -1,7 +1,11 @@
 import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
 
-import { SITE_VERSION } from 'common/constants'
+import {
+  EXTREME_IP_LOOKUP_URL,
+  SITE_VERSION,
+  SITE_VERSION_URL,
+} from 'common/constants'
 import getAppVersion from 'utils/version-toggle'
 
 const { OFFLINE } = SITE_VERSION
@@ -11,15 +15,15 @@ function useAppInfo() {
   const [userData, setUserData] = useState()
 
   useEffect(() => {
-    axios.get('mock/siteVersion.json').then(({ data }) => {
-      const appVersion = getAppVersion(data, userData)
+    axios.get(SITE_VERSION_URL).then(({ data: appConfig }) => {
+      const appVersion = getAppVersion(appConfig, userData)
       setVersion(appVersion)
     })
   }, [userData])
 
   useEffect(() => {
-    axios.get('https://extreme-ip-lookup.com/json/').then(({ data }) => {
-      setUserData(data)
+    axios.get(EXTREME_IP_LOOKUP_URL).then(({ data: userInfo }) => {
+      setUserData(userInfo)
     })
   }, [])
 
