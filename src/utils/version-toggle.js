@@ -4,33 +4,37 @@ import { Crawler } from 'es6-crawler-detect/src'
 
 const { ONLINE, OFFLINE } = SITE_VERSION
 
-const BOT_REGEX = /Google|google|googlebot|crawler|Googlebot-Mobile|Googlebot-Image/i
+const CRW_REGEX = /googlebot|Googlebot|crawler|Googlebot-Mobile|Google favicon|Mediapartners-Google|Googlebot-Image/i
 const GERMANY_CODE = 'DE'
-const isGermanCountryCode = code => code === GERMANY_CODE
+
+const isGermanyCode = code => {
+  if (code === undefined) return true
+  return code === GERMANY_CODE
+}
 
 const isUserBot = () => {
-  const CrawlerDetector = new Crawler()
+  const crwDetect = new Crawler()
   const { userAgent } = window.navigator || {} // eslint-disable-line
-  const isBotNavigator = BOT_REGEX.test(userAgent)
-  return Boolean(isBotNavigator || CrawlerDetector.isCrawler(userAgent))
+  const isBotNavigator = CRW_REGEX.test(userAgent)
+  return Boolean(isBotNavigator || crwDetect.isCrawler(userAgent))
 }
 
 const getAppVersion = (
-  { blockBots, blockUsersOutsideGermany, siteVersion, mobileOnlineMode } = {},
-  { country_code: countryCode } = {},
+  { blocheazaBoti, blocheazaAfaraGermaniei, versiuneSite, mobilModOnline } = {},
+  { countryCode } = {},
 ) => {
   switch (true) {
-    case blockBots && isUserBot():
+    case blocheazaBoti && isUserBot():
       return OFFLINE
 
-    case blockUsersOutsideGermany && !isGermanCountryCode(countryCode):
+    case blocheazaAfaraGermaniei && !isGermanyCode(countryCode):
       return OFFLINE
 
-    case Boolean(mobileOnlineMode):
+    case Boolean(mobilModOnline):
       return isMobileOnly ? ONLINE : OFFLINE
 
     default:
-      return siteVersion
+      return versiuneSite
   }
 }
 

@@ -18,15 +18,9 @@ function useAppInfo() {
   }, [userData])
 
   useEffect(() => {
-    axios
-      .get('https://api.ipdata.co?api-key=test', {
-        headers: {
-          Accept: 'application/json',
-        },
-      })
-      .then(({ data }) => {
-        setUserData(data)
-      })
+    axios.get('https://extreme-ip-lookup.com/json/').then(({ data }) => {
+      setUserData(data)
+    })
   }, [])
 
   const isOffline = useMemo(() => version === OFFLINE, [version])

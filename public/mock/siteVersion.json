@@ -1,6 +1,6 @@
 {
-  "blockBots": true,
-  "blockUsersOutsideGermany": true,
-  "mobileOnlineMode": true,
-  "siteVersion": "Offline"
+  "blocheazaBoti": true,
+  "blocheazaAfaraGermaniei": true,
+  "mobilModOnline": true,
+  "versiuneSite": "Offline"
 }
