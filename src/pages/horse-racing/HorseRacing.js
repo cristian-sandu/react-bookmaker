@@ -19,15 +19,19 @@ const HorseRacing = () => (
       />
       <div className="bookmaker__horse-racing-text">
         <p>
-          Das Finden der besten Websites für Rennwetten ist nicht immer eine leichte Aufgabe.
+          Das Finden der besten Websites für Rennwetten ist nicht immer eine
+          leichte Aufgabe.
         </p>
         <br />
         <p>
-          Nicht, wenn Wetten auf Rennen die zweithäufigsten Wetten in vielen Ländern sind. Pferderennen macht eine Geschichte mit hohen Raten bei der Generierung von viel Geld für die Wirtschaft einiger Länder
+          Nicht, wenn Wetten auf Rennen die zweithäufigsten Wetten in vielen
+          Ländern sind. Pferderennen macht eine Geschichte mit hohen Raten bei
+          der Generierung von viel Geld für die Wirtschaft einiger Länder
         </p>
         <br />
         <p>
-          In unserer Top-Liste der Wett-Websites finden Sie die neuesten Angebote und Aktionen der besten Buchmacher für Rennen.
+          In unserer Top-Liste der Wett-Websites finden Sie die neuesten
+          Angebote und Aktionen der besten Buchmacher für Rennen.
         </p>
       </div>
     </Container>

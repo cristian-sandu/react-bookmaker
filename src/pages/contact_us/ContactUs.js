@@ -115,7 +115,6 @@ function ContactUs({ history }) {
                 {isOnline && (
                   <div>
                     <span style={{ fontFamily: 'serif' }}>
-
                       Sie haben unsere Website besucht und können nicht finden
                       wonach Sie suchen oder haben Anregungen? Treten Sie mit
                       uns in Kontakt! Sind Sie ein Hotelbesitzer, in der Nähe
@@ -224,7 +223,6 @@ function ContactUs({ history }) {
                     type="submit"
                     onClick={handleSubmit}
                   >
-
                     Senden
                   </Button>
                 </Box>

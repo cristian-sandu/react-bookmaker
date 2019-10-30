@@ -18,26 +18,56 @@ const SubFooter = ({ isOnline }) => (
       <span>
         <p style={{ textAlign: 'center' }}>
           <strong style={{ fontSize: 23, paddingLeft: 15 }}>
-            Haben Sie Ihre Sport Leidenschaft mit online Wetten auf ein neues Level gesetzt? Haben Sie sich in der dichten Wettwelt verlaufen? Dann sind sie am richtigen Ort für volle Aufregung und nützliche Anleitungen zum Beginnen!
+            Haben Sie Ihre Sport Leidenschaft mit online Wetten auf ein neues
+            Level gesetzt? Haben Sie sich in der dichten Wettwelt verlaufen?
+            Dann sind sie am richtigen Ort für volle Aufregung und nützliche
+            Anleitungen zum Beginnen!
           </strong>
         </p>
         <p>
-          Egal, welche Art von Sport Ihnen gefällt – ob es Fußball, Basketball, Pferderennen oder Tennis ist, es ist wichtig das geeignete online Wettbüro zu finden, sowie auch das Team, das Sie unterstützen wollen. Die Partner, die an unserer Top Liste teilnehmen, bieten reichhaltige Sportwetten & Märkte, hohe Bonusse und Werbeaktionen, die Sie nicht verpassen sollten! Das Berichte und Bewertungssystem auf unserer Webseite wird regelmäßig von unseren Experten gepflegt und aktualisiert, damit es so verlässlich wie möglich ist. Wählen Sie Ihr Team, lehnen Sie sich zurück und lassen Sie sich von uns durch Deutschlands bekannteste online Wettplattformen führen – die Seiten, welche die besten Wetterlebnisse, großzügige Bonusse und häufige Werbeaktionen bieten.
+          Egal, welche Art von Sport Ihnen gefällt – ob es Fußball, Basketball,
+          Pferderennen oder Tennis ist, es ist wichtig das geeignete online
+          Wettbüro zu finden, sowie auch das Team, das Sie unterstützen wollen.
+          Die Partner, die an unserer Top Liste teilnehmen, bieten reichhaltige
+          Sportwetten & Märkte, hohe Bonusse und Werbeaktionen, die Sie nicht
+          verpassen sollten! Das Berichte und Bewertungssystem auf unserer
+          Webseite wird regelmäßig von unseren Experten gepflegt und
+          aktualisiert, damit es so verlässlich wie möglich ist. Wählen Sie Ihr
+          Team, lehnen Sie sich zurück und lassen Sie sich von uns durch
+          Deutschlands bekannteste online Wettplattformen führen – die Seiten,
+          welche die besten Wetterlebnisse, großzügige Bonusse und häufige
+          Werbeaktionen bieten.
         </p>
         <span>
           <h2 style={{ textAlign: 'center' }}>
             Wie begutachten wir die Top deutschen online Wettseiten?
           </h2>
           <p>
-            Deutsche online Glücksspiele werden immer beliebter und wachsen schnell. Deswegen haben viele bekannte online Wettseiten Interesse am deutschen Markt bekommen. Das hingegen hat zu einem Zustrom der online Wettplattformen geführt. Eine große Anzahl von Online-Wetten kann Verwirrung bei Online-Spielern verursachen und hat bereits viele Fragen aufgeworfen. Wie finden Sie die beste Plattform, die zu Ihnen passt? Welche Seite hat die vielfältigsten Sportwetten? Was sind die Möglichkeiten bei bestimmten Webseiten? Welche Arten von Bonusse und Werbungen bietet die Webseite?
+            Deutsche online Glücksspiele werden immer beliebter und wachsen
+            schnell. Deswegen haben viele bekannte online Wettseiten Interesse
+            am deutschen Markt bekommen. Das hingegen hat zu einem Zustrom der
+            online Wettplattformen geführt. Eine große Anzahl von Online-Wetten
+            kann Verwirrung bei Online-Spielern verursachen und hat bereits
+            viele Fragen aufgeworfen. Wie finden Sie die beste Plattform, die zu
+            Ihnen passt? Welche Seite hat die vielfältigsten Sportwetten? Was
+            sind die Möglichkeiten bei bestimmten Webseiten? Welche Arten von
+            Bonusse und Werbungen bietet die Webseite?
           </p>
         </span>
         <p>
-          In unserer Einrichtung haben wir all diese Faktoren berücksichtigt und eine umfangreiche Liste von Funktionen von Top-Webseiten in einer detaillierten, aber dennoch verständlichen Tabelle zusammengestellt. Online Wettseiten die es auf unsere Top 10 Liste geschafft haben, müssen hohem Standard und Kriterien entsprechen, die von unseren Experten gesetzt wurden.
+          In unserer Einrichtung haben wir all diese Faktoren berücksichtigt und
+          eine umfangreiche Liste von Funktionen von Top-Webseiten in einer
+          detaillierten, aber dennoch verständlichen Tabelle zusammengestellt.
+          Online Wettseiten die es auf unsere Top 10 Liste geschafft haben,
+          müssen hohem Standard und Kriterien entsprechen, die von unseren
+          Experten gesetzt wurden.
         </p>
         <h4>
           <em>
-            Wir haben die besten deutschen online Wettseiten überprüft und da wir gerne einfach und direkt sind, für eine nutzerfreundliche Webseite, werden Sie hier eine kurze Liste der besten Wettseiten finden, basierend auf sehr einfachen Kriterien, wie z. B.:
+            Wir haben die besten deutschen online Wettseiten überprüft und da
+            wir gerne einfach und direkt sind, für eine nutzerfreundliche
+            Webseite, werden Sie hier eine kurze Liste der besten Wettseiten
+            finden, basierend auf sehr einfachen Kriterien, wie z. B.:
           </em>
         </h4>
         <span>
@@ -52,7 +82,11 @@ const SubFooter = ({ isOnline }) => (
           <p className="withBullet">Kundenservice für Webseiten Nutzer</p>
         </span>
         <span>
-          Die Webseiten auf unserer Liste dienen allen deutschen Spielern, die nach der besten online Seite zum Wetten suchen. Unsere Bewertung wurde von einer Gruppe von Experten durchgeführt, die erwähnenswerte Erfahrung in dieser Branche haben. Daher können Sie sicher sein, dass alle Berichte verlässlich und unvoreingenommen sind.
+          Die Webseiten auf unserer Liste dienen allen deutschen Spielern, die
+          nach der besten online Seite zum Wetten suchen. Unsere Bewertung wurde
+          von einer Gruppe von Experten durchgeführt, die erwähnenswerte
+          Erfahrung in dieser Branche haben. Daher können Sie sicher sein, dass
+          alle Berichte verlässlich und unvoreingenommen sind.
         </span>
         <p className="withBullet">
           {`Unsere Webseite beantwortet die häufig gestellte Frage - WIE die

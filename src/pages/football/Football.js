@@ -19,15 +19,24 @@ const Football = () => (
       />
       <div className="bookmaker__football-text">
         <p>
-          Selbst wenn Sie nur “Fußball wetten” in Google eingeben, werden Sie von vielen Möglichkeiten überwältigt sein, die vorhanden sind.
+          Selbst wenn Sie nur “Fußball wetten” in Google eingeben, werden Sie
+          von vielen Möglichkeiten überwältigt sein, die vorhanden sind.
         </p>
         <br />
         <p>
-          Es gibt Hunderte von verschiedenen Sportwetten für die Spieler, jede mit ihren eigenen Bonusse, Märkten, Quoten und exklusiven Eigenschaften. Mit dieser großen Auswahl ist es schwierig das beste Ziel für Ihre Wetten zu finden. Zum Glück sind Sie hier genau richtig. Wir haben detaillierte Informationen zu den führenden Wett-Websites zusammengestellt, um Ihnen alle Antworten zu geben, die Sie brauchen.
+          Es gibt Hunderte von verschiedenen Sportwetten für die Spieler, jede
+          mit ihren eigenen Bonusse, Märkten, Quoten und exklusiven
+          Eigenschaften. Mit dieser großen Auswahl ist es schwierig das beste
+          Ziel für Ihre Wetten zu finden. Zum Glück sind Sie hier genau richtig.
+          Wir haben detaillierte Informationen zu den führenden Wett-Websites
+          zusammengestellt, um Ihnen alle Antworten zu geben, die Sie brauchen.
         </p>
         <br />
         <p>
-          Hier finden Sie Details zu ihren Willkommensangeboten, eine kurze Zusammenfassung der wichtigsten Funktionen der Buchmacher und einen Link zu ihrer Website, damit Sie Ihren Willkommensbonus erhalten können.
+          Hier finden Sie Details zu ihren Willkommensangeboten, eine kurze
+          Zusammenfassung der wichtigsten Funktionen der Buchmacher und einen
+          Link zu ihrer Website, damit Sie Ihren Willkommensbonus erhalten
+          können.
         </p>
       </div>
     </Container>

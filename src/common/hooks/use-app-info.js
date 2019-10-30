@@ -22,9 +22,13 @@ function useAppInfo() {
   }, [userData])
 
   useEffect(() => {
-    axios.get(EXTREME_IP_LOOKUP_URL).then(({ data: userInfo }) => {
-      setUserData(userInfo)
-    })
+    axios
+      .get(EXTREME_IP_LOOKUP_URL)
+      .then(({ data: userInfo }) => {
+        setUserData(userInfo)
+      })
+      // eslint-disable-next-line no-console
+      .catch(error => console.log(error))
   }, [])
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
