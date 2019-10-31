@@ -28,7 +28,7 @@ function useAppInfo() {
   useEffect(() => {
     if (!isWebUri(EXTREME_IP_LOOKUP_URL)) return
     axios
-      .get(EXTREME_IP_LOOKUP_URL)
+      .get(EXTREME_IP_LOOKUP_URL, { timeout: 500 })
       .then(({ data: userInfo, status } = {}) => {
         if (status === SUCCESS_STATUS_CODE) {
           setUserData(userInfo)
