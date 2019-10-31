@@ -1,6 +1,7 @@
-import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
+import { always } from 'ramda'
 import { isWebUri } from 'valid-url'
+import axios from 'axios'
 
 import {
   EXTREME_IP_LOOKUP_URL,
@@ -11,6 +12,7 @@ import {
 import getAppVersion from 'utils/version-toggle'
 
 const { OFFLINE } = SITE_VERSION
+const noop = always(undefined)
 
 function useAppInfo() {
   const [version, setVersion] = useState()
@@ -24,25 +26,31 @@ function useAppInfo() {
   }, [userData])
 
   useEffect(() => {
-    if (isWebUri(EXTREME_IP_LOOKUP_URL)) {
-      axios
-        .get(EXTREME_IP_LOOKUP_URL)
-        .then(({ data: userInfo, status } = {}) => {
-          if (status === SUCCESS_STATUS_CODE) {
-            setUserData(userInfo)
-          }
-        })
-        // eslint-disable-next-line no-console
-        .catch(error => console.log(error))
-    }
+    if (!isWebUri(EXTREME_IP_LOOKUP_URL)) return
+    axios
+      .get(EXTREME_IP_LOOKUP_URL)
+      .then(({ data: userInfo, status } = {}) => {
+        if (status === SUCCESS_STATUS_CODE) {
+          setUserData(userInfo)
+        }
+      })
+      .catch(noop)
   }, [])
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
 
-  const isAppReady = useMemo(() => Boolean(version && userData), [
-    userData,
-    version,
-  ])
+  const isAppReady = useMemo(() => {
+    switch (true) {
+      case !version:
+        return false
+
+      case version && !userData:
+        return true
+
+      default:
+        return Boolean(version && userData)
+    }
+  }, [userData, version])
 
   return {
     isAppReady,
