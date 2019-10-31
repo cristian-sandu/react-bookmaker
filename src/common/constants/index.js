@@ -10,8 +10,6 @@ export const SITE_VERSION_URL = 'mock/siteVersion.json'
 export const EXTREME_IP_LOOKUP_URL = 'https://extreme-ip-lookup.com/json/'
 
 // HTTP Statuses
-export const SUCCESS_STATUS = 'alive'
-export const DEAD_STATUS = 'dead'
 export const SUCCESS_STATUS_CODE = 200
 
 // Routes

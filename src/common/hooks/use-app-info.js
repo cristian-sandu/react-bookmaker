@@ -1,10 +1,12 @@
 import axios from 'axios'
 import { useEffect, useMemo, useState } from 'react'
+import { isWebUri } from 'valid-url'
 
 import {
   EXTREME_IP_LOOKUP_URL,
   SITE_VERSION,
   SITE_VERSION_URL,
+  SUCCESS_STATUS_CODE,
 } from 'common/constants'
 import getAppVersion from 'utils/version-toggle'
 
@@ -22,13 +24,17 @@ function useAppInfo() {
   }, [userData])
 
   useEffect(() => {
-    axios
-      .get(EXTREME_IP_LOOKUP_URL)
-      .then(({ data: userInfo }) => {
-        setUserData(userInfo)
-      })
-      // eslint-disable-next-line no-console
-      .catch(error => console.log(error))
+    if (isWebUri(EXTREME_IP_LOOKUP_URL)) {
+      axios
+        .get(EXTREME_IP_LOOKUP_URL)
+        .then(({ data: userInfo, status } = {}) => {
+          if (status === SUCCESS_STATUS_CODE) {
+            setUserData(userInfo)
+          }
+        })
+        // eslint-disable-next-line no-console
+        .catch(error => console.log(error))
+    }
   }, [])
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
