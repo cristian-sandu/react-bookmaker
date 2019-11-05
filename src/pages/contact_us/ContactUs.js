@@ -3,7 +3,6 @@ import { instanceOf } from 'prop-types'
 import { withRouter } from 'react-router'
 import DateFnsUtils from '@date-io/date-fns'
 import classNames from 'classnames'
-
 import {
   Box,
   Button,

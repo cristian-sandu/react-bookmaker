@@ -8,7 +8,6 @@ import SpinSports from '../images/spin_sports.jpg'
 import LeoVegas from '../images/leovegas.png'
 import _888Sport from '../images/888Sports.png'
 import _10Bet from '../images/10bet.jpg'
-
 import { LOGO_NAMES } from '../constants'
 
 const {

@@ -1,0 +1,15 @@
+.bookmaker__loading {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.bookmaker__loading svg {
+    width: 60px !important;
+    height: 60px !important;
+}

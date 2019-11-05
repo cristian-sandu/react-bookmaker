@@ -1,5 +1,4 @@
 import React, { useContext, useMemo } from 'react'
-
 import { Container } from '@material-ui/core'
 
 import { SubFooter, SubHeader } from 'common/components'

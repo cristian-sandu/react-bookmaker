@@ -1,5 +1,6 @@
 import { isMobileOnly } from 'react-device-detect'
 import { Crawler } from 'es6-crawler-detect/src'
+
 import { SITE_VERSION } from 'common/constants'
 
 const { ONLINE, OFFLINE } = SITE_VERSION

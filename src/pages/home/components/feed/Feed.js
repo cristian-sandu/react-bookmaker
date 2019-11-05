@@ -3,7 +3,6 @@ import { Table, Tbody, Thead } from 'react-super-responsive-table'
 import { withRouter } from 'react-router'
 import { instanceOf, bool } from 'prop-types'
 import { isMobileOnly } from 'react-device-detect'
-
 import { makeStyles } from '@material-ui/core/styles'
 import { Paper } from '@material-ui/core'
 

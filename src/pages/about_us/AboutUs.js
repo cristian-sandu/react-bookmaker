@@ -2,7 +2,6 @@ import React, { useContext, useMemo } from 'react'
 import { Container, Link } from '@material-ui/core'
 
 import { Facebook, LinkedIn, Twitter } from 'assets/social-icons'
-
 import { SITE_VERSION } from 'common/constants'
 import { FOOTER_SOCIAL_LINKS } from 'common/components/footer/constants'
 import { PageTitle, SubHeader } from 'common/components'

@@ -3,6 +3,7 @@ import 'react-app-polyfill/stable'
 
 import React from 'react'
 import { render } from 'react-dom'
+
 import { AppProvider } from 'common/providers'
 
 import { register } from './utils/serviceWorker'

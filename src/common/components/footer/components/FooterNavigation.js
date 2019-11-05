@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { APP_ROUTES } from 'common/constants'
+
 import { FOOTER_LINKS as LINKS } from '../constants'
 
 const linkStyle = {

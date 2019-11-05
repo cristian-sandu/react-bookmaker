@@ -1,10 +1,9 @@
 import React, { useContext, useMemo } from 'react'
-
-import FootballBeer from 'assets/png/football-beer.png'
 import { Box } from '@material-ui/core'
 import { Autorenew } from '@material-ui/icons'
 import useMediaQuery from '@material-ui/core/useMediaQuery/useMediaQuery'
 
+import FootballBeer from 'assets/png/football-beer.png'
 import SiteVersionContext from 'common/context/siteVersionContext'
 import { SITE_VERSION } from 'common/constants'
 

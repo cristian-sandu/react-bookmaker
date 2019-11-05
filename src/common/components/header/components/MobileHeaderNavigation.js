@@ -2,9 +2,6 @@ import React, { useMemo } from 'react'
 import useToggle from 'react-use-toggle'
 import { always, cond, equals, T } from 'ramda'
 import { Link } from 'react-router-dom'
-
-import { APP_ROUTES } from 'common/constants'
-
 import { makeStyles } from '@material-ui/core/styles'
 import {
   Drawer,
@@ -22,6 +19,8 @@ import {
   Pets,
   Security,
 } from '@material-ui/icons'
+
+import { APP_ROUTES } from 'common/constants'
 
 import { FOOTER_LINKS } from '../../footer/constants'
 import { HEADER_LINKS } from '../constants'
