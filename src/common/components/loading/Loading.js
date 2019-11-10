@@ -4,7 +4,7 @@ import { CircularProgress } from '@material-ui/core'
 import './loading.css'
 
 const Loading = () => (
-  <CircularProgress className="bookmaker__loading" size="100%" />
+  <CircularProgress className="bookmaker__loading" size={50} />
 )
 
 export default Loading
