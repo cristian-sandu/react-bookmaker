@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react'
-import { always } from 'ramda'
 import { isWebUri } from 'valid-url'
 import axios from 'axios'
 
@@ -12,30 +11,41 @@ import {
 import getAppVersion from 'utils/version-toggle'
 
 const { OFFLINE } = SITE_VERSION
-const noop = always(undefined)
 
 function useAppInfo() {
-  const [version, setVersion] = useState()
+  const [config, setConfig] = useState()
   const [userData, setUserData] = useState()
+  const [hasError, setError] = useState(false)
 
   useEffect(() => {
     axios.get(SITE_VERSION_URL).then(({ data: appConfig }) => {
-      const appVersion = getAppVersion(appConfig, userData)
-      setVersion(appVersion)
+      setConfig(appConfig)
     })
-  }, [userData])
+  }, [])
 
   useEffect(() => {
-    if (!isWebUri(EXTREME_IP_LOOKUP_URL)) return
-    axios
-      .get(EXTREME_IP_LOOKUP_URL, { timeout: 3000 })
-      .then(({ data: userInfo, status } = {}) => {
-        if (status === SUCCESS_STATUS_CODE) {
-          setUserData(userInfo)
-        }
-      })
-      .catch(noop)
+    if (isWebUri(EXTREME_IP_LOOKUP_URL)) {
+      axios
+        .get(EXTREME_IP_LOOKUP_URL, { timeout: 3000 })
+        .then(({ data: userInfo, status } = {}) => {
+          if (status === SUCCESS_STATUS_CODE) {
+            setUserData(userInfo)
+            setError(false)
+          } else {
+            setError(true)
+          }
+        })
+        .catch(() => setError(true))
+    } else {
+      setError(true)
+    }
   }, [])
+
+  const version = useMemo(() => getAppVersion(config, userData, hasError), [
+    config,
+    userData,
+    hasError,
+  ])
 
   const isOffline = useMemo(() => version === OFFLINE, [version])
 
@@ -44,19 +54,20 @@ function useAppInfo() {
       case !version:
         return false
 
-      case version && !userData:
+      case version && hasError:
         return true
 
       default:
         return Boolean(version && userData)
     }
-  }, [userData, version])
+  }, [userData, version, hasError])
 
   return {
     isAppReady,
     version,
     userData,
     isOffline,
+    config,
   }
 }
 

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import { Loading, ScrollToTop } from 'common/components'
-import { VersionProvider } from 'common/context'
+import { VersionProvider } from 'common/contexts'
 import { useAppInfo } from 'common/hooks'
 
 import App from '../../App'
@@ -23,4 +23,4 @@ function AppProvider() {
   )
 }
 
-export default AppProvider
+export default memo(AppProvider)

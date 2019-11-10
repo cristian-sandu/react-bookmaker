@@ -7,8 +7,8 @@ const { ONLINE, OFFLINE } = SITE_VERSION
 const GERMANY_CODE = 'DE'
 const CRW_REGEX = /googlebot|Googlebot|crawler|Googlebot-Mobile|Google favicon|Mediapartners-Google|Googlebot-Image/i
 
-const isNotGermanyCode = countryCode => {
-  if (!countryCode) return false
+const isNotGermany = (countryCode, hasError) => {
+  if (hasError) return false
   return countryCode !== GERMANY_CODE
 }
 
@@ -22,12 +22,13 @@ const isUserBot = () => {
 const getAppVersion = (
   { blocheazaBoti, blocheazaAfaraGermaniei, versiuneSite, mobilModOnline } = {},
   { countryCode } = {},
+  hasError,
 ) => {
   switch (true) {
     case blocheazaBoti && isUserBot():
       return OFFLINE
 
-    case blocheazaAfaraGermaniei && isNotGermanyCode(countryCode):
+    case blocheazaAfaraGermaniei && isNotGermany(countryCode, hasError):
       return OFFLINE
 
     case Boolean(mobilModOnline):

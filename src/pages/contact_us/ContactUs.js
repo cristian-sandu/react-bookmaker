@@ -18,7 +18,7 @@ import {
 
 import { APP_ROUTES, SITE_VERSION } from 'common/constants'
 import { PageTitle, SubHeader } from 'common/components'
-import SiteVersionContext from 'common/context/siteVersionContext'
+import SiteVersionContext from 'common/contexts/siteVersionContext'
 
 import './styles.css'
 import 'date-fns'

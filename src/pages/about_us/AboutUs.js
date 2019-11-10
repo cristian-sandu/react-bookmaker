@@ -5,7 +5,7 @@ import { Facebook, LinkedIn, Twitter } from 'assets/social-icons'
 import { SITE_VERSION } from 'common/constants'
 import { FOOTER_SOCIAL_LINKS } from 'common/components/footer/constants'
 import { PageTitle, SubHeader } from 'common/components'
-import SiteVersionContext from 'common/context/siteVersionContext'
+import SiteVersionContext from 'common/contexts/siteVersionContext'
 
 import './styles.css'
 

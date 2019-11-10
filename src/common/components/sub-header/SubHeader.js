@@ -4,7 +4,7 @@ import { Autorenew } from '@material-ui/icons'
 import useMediaQuery from '@material-ui/core/useMediaQuery/useMediaQuery'
 
 import FootballBeer from 'assets/png/football-beer.png'
-import SiteVersionContext from 'common/context/siteVersionContext'
+import SiteVersionContext from 'common/contexts/siteVersionContext'
 import { SITE_VERSION } from 'common/constants'
 
 import {
