@@ -39,7 +39,14 @@ const FeedRow = ({
         </a>
       </TableCell>
       <TableCell>
-        <span style={{ textAlign: 'center' }}>{location}</span>
+        <span
+          style={{
+            textAlign: 'center',
+            fontWeight: isOnline ? 'bold' : 'normal',
+          }}
+        >
+          {location}
+        </span>
       </TableCell>
       <TableCell>
         <span

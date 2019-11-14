@@ -5,6 +5,8 @@ import { isWebUri } from 'valid-url'
 
 import {
   EXTREME_IP_LOOKUP_URL,
+  // LOGS_BASE_URL,
+  // LOGS_SAVE_URL,
   SITE_VERSION,
   SITE_VERSION_URL,
   SUCCESS_STATUS_CODE,
@@ -74,16 +76,15 @@ function useAppInfo() {
 
   // useEffect(() => {
   //   const body = {
+  //     ...restLogData(),
   //     isAppReady,
   //     version,
   //     userData,
   //     config,
-  //     ...restLogData(),
   //   }
   //
-  //   axios.post('/saveUserInfo', body, {
-  //     withCredentials: true,
-  //     baseURL: 'localhost:8000',
+  //   axios.post(LOGS_SAVE_URL, body, {
+  //     baseURL: LOGS_BASE_URL,
   //   })
   // }, [config, isAppReady, userData, version])
 
