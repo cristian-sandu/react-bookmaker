@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from 'react'
-import { isWebUri } from 'valid-url'
 import axios from 'axios'
+import { useEffect, useMemo, useState } from 'react'
+// import { isMobileOnly } from 'react-device-detect'
+import { isWebUri } from 'valid-url'
 
 import {
   EXTREME_IP_LOOKUP_URL,
@@ -11,6 +12,15 @@ import {
 import getAppVersion from 'utils/version-toggle'
 
 const { OFFLINE } = SITE_VERSION
+
+// const restLogData = () => {
+//   const { userAgent } = window.navigator || {} // eslint-disable-line
+//   return {
+//     isMobile: isMobileOnly,
+//     isBot: isUserBot(),
+//     userAgent: String(userAgent),
+//   }
+// }
 
 function useAppInfo() {
   const [config, setConfig] = useState()
@@ -61,6 +71,21 @@ function useAppInfo() {
         return Boolean(version && userData)
     }
   }, [userData, version, hasError])
+
+  // useEffect(() => {
+  //   const body = {
+  //     isAppReady,
+  //     version,
+  //     userData,
+  //     config,
+  //     ...restLogData(),
+  //   }
+  //
+  //   axios.post('/saveUserInfo', body, {
+  //     withCredentials: true,
+  //     baseURL: 'localhost:8000',
+  //   })
+  // }, [config, isAppReady, userData, version])
 
   return {
     isAppReady,

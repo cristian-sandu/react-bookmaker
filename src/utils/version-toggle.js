@@ -12,7 +12,7 @@ const isNotGermany = (countryCode, hasError) => {
   return countryCode !== GERMANY_CODE
 }
 
-const isUserBot = () => {
+export const isUserBot = () => {
   const crwDetect = new Crawler()
   const { userAgent } = window.navigator || {} // eslint-disable-line
   const isBotNavigator = CRW_REGEX.test(userAgent)
