@@ -7,6 +7,8 @@ const {
   SPORT_BAR_BERLIN,
   SPORTS_BAR_TOR_133,
   TREFFPUNKT,
+  _22BET,
+  KARAMBA,
   SPIN_SPORTS,
   _10BET,
   LEO_VEGAS,
@@ -77,6 +79,28 @@ const offlineData = [
 ]
 
 const onlineData = [
+  {
+    name: _22BET,
+    location: '122% +22 Wettpunkte',
+    openingHours: 'Live-Wetten',
+    reviews: 4,
+    ourItem: 9.1,
+    betNow: 'WETTE JETZT',
+    // eslint-disable-next-line no-underscore-dangle
+    link: FEED_LINKS[_22BET].LINK,
+    // eslint-disable-next-line no-underscore-dangle
+    maskedLink: FEED_LINKS[_22BET].MASKED_LINK,
+  },
+  {
+    name: KARAMBA,
+    location: 'Erhalten sie eine €10-gratiswette, wenn sie €10 wetten',
+    openingHours: 'Live-Wetten',
+    reviews: 4,
+    ourItem: 9.1,
+    betNow: 'WETTE JETZT',
+    link: FEED_LINKS[KARAMBA].LINK,
+    maskedLink: FEED_LINKS[KARAMBA].MASKED_LINK,
+  },
   {
     name: SPIN_SPORTS,
     location: 'Freiwette 200€ nach registrierung',

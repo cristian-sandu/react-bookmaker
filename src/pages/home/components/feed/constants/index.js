@@ -9,6 +9,8 @@ export const LOGO_NAMES = {
   SPORTS_BAR_TOR_133: 'SPORTS_BAR_TOR_133',
   TREFFPUNKT: 'TREFFPUNKT',
   // Online
+  _22BET: '22Bet',
+  KARAMBA: 'Karamba',
   SPIN_SPORTS: 'Spin Sports',
   _10BET: '10BET',
   LEO_VEGAS: 'Leo Vegas',
@@ -41,6 +43,16 @@ export const FEED_LINKS = {
     MASKED_LINK: `${APP_URL}/go/treffpunkt-sportsbar/222981`,
   },
   // Online
+  // eslint-disable-next-line no-underscore-dangle
+  [LOGO_NAMES._22BET]: {
+    LINK:
+      'https://refpasrasw.world//L?tag=d_358379m_7669c_&site=358379&ad=7669',
+    MASKED_LINK: `${APP_URL}/go/refpasrasw/666052`,
+  },
+  [LOGO_NAMES.KARAMBA]: {
+    LINK: 'https://betting.karamba.com/DE/Karambasports/?afi=25788&ar=',
+    MASKED_LINK: `${APP_URL}/go/karamba/111032`,
+  },
   [LOGO_NAMES.SPIN_SPORTS]: {
     LINK: 'https://www.spinsports.com/de/?s=bfp18821&a=bfpadid112425',
     MASKED_LINK: `${APP_URL}/go/spinsports/999032`,
