@@ -45,9 +45,8 @@ export const FEED_LINKS = {
   // Online
   // eslint-disable-next-line no-underscore-dangle
   [LOGO_NAMES._22BET]: {
-    LINK:
-      'https://refpasrasw.world//L?tag=d_358379m_7669c_&site=358379&ad=7669',
-    MASKED_LINK: `${APP_URL}/go/refpasrasw/666052`,
+    LINK: 'https://22bet.com/de/?tag=d_358379m_7669c_',
+    MASKED_LINK: `${APP_URL}/go/22bet/666052`,
   },
   [LOGO_NAMES.KARAMBA]: {
     LINK: 'https://betting.karamba.com/DE/Karambasports/?afi=25788&ar=',
